@@ -153,6 +153,10 @@ if(FEATURE_WEBCIL)
   add_compile_definitions(FEATURE_WEBCIL)
 endif()
 
+if(FEATURE_INPROC_CRASHREPORT)
+  add_compile_definitions(FEATURE_INPROC_CRASHREPORT)
+endif()
+
 add_compile_definitions($<${FEATURE_JAVAMARSHAL}:FEATURE_JAVAMARSHAL>)
 
 add_definitions(-DFEATURE_READYTORUN)
